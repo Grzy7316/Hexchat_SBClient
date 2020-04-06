@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 using System.IO;
 using System.IO.Compression;
 
-namespace HexchatSBClient.ResultsMonitor
+namespace HexchatSBClient.ResultsManager
 {
-    public class FileMontor
+    public class FileMonitor
     {
         public List<FileInfo> ZipFileFinder(string path, string type)
         {
 
             DirectoryInfo SBPath = new DirectoryInfo(path);
             List<FileInfo> FileList = SBPath.GetFiles("SearchBot_results_*." + type).ToList();
-            //List<String> Files = new List<String>();
-            //foreach (FileInfo F in FileList)
-            //{
-            //    Files.Add(F.FullName);
-            //}
-            //return Files; 
             return FileList;
 
         }

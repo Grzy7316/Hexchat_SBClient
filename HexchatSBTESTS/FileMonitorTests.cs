@@ -9,14 +9,14 @@ using HexchatSBClient;
 
 
 
-namespace HexchatSBTESTS.FileTesting
+namespace HexchatSBTESTS
 {
 
     [TestFixture]
     class TestZipFileTools
     {
 
-        public HexchatSBClient.ResultsMonitor.FileMontor FM = new HexchatSBClient.ResultsMonitor.FileMontor();
+        public HexchatSBClient.ResultsManager.FileMonitor FM = new HexchatSBClient.ResultsManager.FileMonitor();
         [Test]
         public void TestZipFinder_Ex()
         {
@@ -46,7 +46,7 @@ namespace HexchatSBTESTS.FileTesting
     [TestFixture]
     class TestTxtFiles
     {
-        public HexchatSBClient.ResultsMonitor.FileMontor FM = new HexchatSBClient.ResultsMonitor.FileMontor();
+        public HexchatSBClient.ResultsManager.FileMonitor FM = new HexchatSBClient.ResultsManager.FileMonitor();
         [Test]
         public void TestFindTextFiles_ex()
         {
