@@ -104,6 +104,7 @@
             this.Controls.Add(this.FolderPathBox);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ResultsGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
